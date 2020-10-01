@@ -16,9 +16,9 @@ func fib_iterative(n int) uint64 {
 	if n == 0 {return uint64(0)}
 	if n == 1 {return uint64(1)}
 
-	var prev1 uint64 = 0
-	var prev2 uint64 = 1
-	var temp uint64 = 0
+	temp := uint64(0)
+	prev1 := uint64(0)
+	prev2 := uint64(1)
 
 	for i := 2; i<n+1; i++ {
 		temp = prev1 + prev2
